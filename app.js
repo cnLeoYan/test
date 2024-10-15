@@ -1,3 +1,7 @@
-app.use('/aaa',(req,res)=>{
+const express = require('express');
+var app = express();
+app.get('/',(req,res)=>{
     res.send('hello world')
 })
+app.listen(3000);
+console.log('Server running at http://localhost:3000/');
