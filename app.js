@@ -1,7 +1,7 @@
-const express = require('express');
-var app = express();
-app.get('/',(req,res)=>{
+app.get('/report/aaa',(req,res)=>{
     res.send('hello world')
 })
-app.listen(3000);
-console.log('Server running at http://localhost:3000/');
+
+app.get('/bbb',(req,res)=>{
+    res.send('hello world')
+})
